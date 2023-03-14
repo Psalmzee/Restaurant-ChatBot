@@ -1,0 +1,23 @@
+{
+  "name": "restaurant-chatbot",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Psalmzee/Restaurant-ChatBot.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Psalmzee/Restaurant-ChatBot/issues"
+  },
+  "homepage": "https://github.com/Psalmzee/Restaurant-ChatBot#readme",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
