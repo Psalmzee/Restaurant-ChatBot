@@ -3,10 +3,10 @@
 
 This is a chatbot for a restaurant that allows users to place an order, cancel order, check their order history (current or old), and saves their session and chat history. The chatbot is built using Node.js and Socket.IO, and is designed to provide a seamless and convenient experience for customers who want to order food without having to visit the restaurant or make a phone call.
 
+### Restaurant-ChatBot | SAMSON OKEJI
+<img src="Screenshot-landingPage.PNG"/>
 
-
-### Live Site
-<img src="Screenshot-landingPage.PNG" width="128"/>
+### Deployed/Live link
 ---
 
 -   [Coming Soon...]("live-link")
