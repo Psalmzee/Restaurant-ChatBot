@@ -1,17 +1,81 @@
 # Restaurant-ChatBot
-## A restaurant chatbot that assists customers in placing orders for their preferred meals\
 
-### Requirements
-ChatBot interface would be like a chat interface
-No need for authentication but we should be able to store user session based on devices
-When a customer lands on the chatbot page, the bot should send these options to the customer:
-Select 1 to Place an order
-Select 99 to checkout order
-Select 98 to see order history
-Select 97 to see current order
-Select 0 to cancel order
-When a customer selects “1”, the bot should return a list of items from the restaurant. It is up to you to create the items in your restaurant for the customer. The order items can have multiple options but the customer should be able to select the preferred items from the list using this same number select system and place an order.
-When a customer selects “99” out an order, the bot should respond with “order placed” and if none the bot should respond with “No order to place”. Customer should also see an option to place a new order
-When a customer selects “98”, the bot should be able to return all placed order
-When a customer selects “97”, the bot should be able to return current order
-When a customer selects “0”, the bot should cancel the order if there is.
+This is a chatbot for a restaurant that allows users to place an order, cancel order, check their order history (current or old), and saves their session and chat history. The chatbot is built using Node.js and Socket.IO, and is designed to provide a seamless and convenient experience for customers who want to order food without having to visit the restaurant or make a phone call.
+
+### Live Site
+
+---
+
+-   [Coming Soon...]("live-link")
+
+
+### Technologies:
+
+---
+
+-   Node.js
+-   Express.js
+-   MongoDB
+-   Socket.IO
+-   Express-Session
+-   Moment.js  
+
+### Features
+
+---
+#### The following are the features of the restaurant chatbot:
+-   Place an Order: Users can place an order food by entering the corresponding number of the item they want from the menu.
+-   Cancel order: Users can cancel their order by entering 0 and it cancels their current order cart
+-   Check order history: Users can check their current or old order history by entering the corresponding number.
+-   Save session and chat history: The chatbot saves the user's session and chat history, so they can resume their order or check their history at any time.
+
+
+
+### Getting Started
+
+---
+
+1. Clone the repository:
+    -`https://github.com/Psalmzee/Restaurant-ChatBot.git`
+2. Install all  dependencies:
+    - `npm install`
+3. Create a .env file in the root directory using the example.env file as a guide 
+
+4. Start the application:
+    - `npm run dev`
+5. Open the application in your browser:
+    - `http://localhost:9001`
+
+### Usage
+
+---
+
+To use the restaurant chatbot, follow these steps:
+
+-   Visit the chatbot site [Coming Soon...]("live-link") on your device
+
+
+-   The chatbot will greet you and when you respond, it will return the available options for you to choose from.
+-   You will be asked to:
+    -   Enter "1" to order food
+
+    -   Enter "99" to checkout your order 
+
+    -   Enter "98" to see old orders
+
+    -   Enter "97" to see your current order
+
+    -   Enter "0" to cancel your order
+   
+-  If you select "1" to order food, the chatbot will present you with a menu of items with corresponding numbers. You can enter the number of the item you want to order.
+-  If you select "99" to checkout your order, the chatbot will let you know that your order has been placed and will show the main menu.
+-  If you select "98" to see old orders, the chatbot will show you your old orders.
+-  If you select "97" to see your current order, the chatbot will show you your current order.
+-  If you select "0" to cancel your order, the chatbot will let you know that your order has been cancelled and will show the main menu.
+
+
+### Disclaimer
+
+---
+
+For learning purpose only!
