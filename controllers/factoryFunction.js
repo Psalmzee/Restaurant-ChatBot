@@ -27,7 +27,7 @@ exports.loadMessage = async (io, sessionID) => {
 exports.welcomeMessage = (io, sessionID) => {
 	io.to(sessionID).emit(
 		"bot message",
-		formatMessage(config.botName, "Welcome to Saheed's ChatBot! 🤖 <br> Say hello to the bot")
+		formatMessage(config.botName, "Welcome to Samson Okeji Restaurant Bot Service! <br>Hi, How may I serve you today?")
 	);
 };
 
@@ -53,7 +53,7 @@ exports.checkOutOrder = async (io, sessionID) => {
 	if (sessionOrder.currentOrder.length < 1) {
 		botMessage = formatMessage(
 			config.botName,
-			"You have not ordered anything yet"
+			"You have not ordered anything yet!"
 		);
 		io.to(sessionID).emit("bot message", botMessage);
 	} else {
@@ -64,7 +64,7 @@ exports.checkOutOrder = async (io, sessionID) => {
 		sessionOrder.currentOrder = [];
 		await sessionOrder.save();
 
-		botMessage = formatMessage(config.botName, "Order Placed");
+		botMessage = formatMessage(config.botName, "Order Placed Successfully!");
 
 		io.to(sessionID).emit("bot message", botMessage);
 	}
@@ -81,7 +81,7 @@ exports.orderHistory = async (io, sessionID) => {
 	if (sessionOrder.placedOrder.length < 1) {
 		botMessage = formatMessage(
 			config.botName,
-			"You do not have any order history yet"
+			"You do not have any order history yet!"
 		);
 		io.to(sessionID).emit("bot message", botMessage);
 	} else {
@@ -102,7 +102,7 @@ exports.currentOrder = async (io, sessionID) => {
 	let botMessage = "";
 
 	if (sessionOrder.currentOrder.length < 1) {
-		botMessage = formatMessage(config.botName, "You do not have any order yet");
+		botMessage = formatMessage(config.botName, "You do not have any order yet!");
 		io.to(sessionID).emit("bot message", botMessage);
 	} else {
 		botMessage = formatMessage(
@@ -123,11 +123,11 @@ exports.cancelOrder = async (io, sessionID) => {
 	let botMessage = "";
 
 	if (sessionOrder.currentOrder.length < 1) {
-		botMessage = formatMessage(config.botName, "You do not have any order yet");
+		botMessage = formatMessage(config.botName, "You do not have any order yet!");
 
 		io.to(sessionID).emit("bot message", botMessage);
 	} else {
-		botMessage = formatMessage(config.botName, "Order Cancelled");
+		botMessage = formatMessage(config.botName, "Order Cancelled!");
 
 		sessionOrder.currentOrder = [];
 		await sessionOrder.save();
