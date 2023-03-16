@@ -9,7 +9,7 @@ This is a chatbot for a restaurant that allows users to place an order, cancel o
 ### Deployed/Live link
 ---
 
--   [Coming Soon...]("live-link")
+-   [Restaurant-ChatBot]("https://sammy-restaurant-bot.onrender.com")
 
 
 ### Technologies:
@@ -55,7 +55,7 @@ This is a chatbot for a restaurant that allows users to place an order, cancel o
 
 To use the restaurant chatbot, follow these steps:
 
--   Visit the chatbot site [Coming Soon...]("live-link") on your device
+-   Visit the chatbot site [Restaurant-ChatBot]("https://sammy-restaurant-bot.onrender.com") on your device
 
 
 -   The chatbot will greet you and when you respond, it will return the available options for you to choose from.
